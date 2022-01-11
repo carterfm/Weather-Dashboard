@@ -1,0 +1,50 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    height: 4rem;
+    background-image: linear-gradient(to right, #3464bc, #20094b);
+    font-size: 1rem;
+    color: white;
+}
+
+form {
+    padding-bottom: 10px;
+    border-bottom: 2px grey solid;
+}
+
+button {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+}
+
+#location-search-label {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#favorites button {
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    background-color: #aeaeae;
+    color: black;
+}
+
+#current-weather-display {
+    width: 100%;
+    border: 1px black solid;
+}
