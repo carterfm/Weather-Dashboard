@@ -31,6 +31,14 @@ h4 {
     width: 90%;
 }
 
+.five-day-weather-display {
+    display: none;
+}
+
+.weather-icon {
+    width: 50px;
+}
+
 #location-search-label {
     font-size: 2rem;
     font-weight: bold;
@@ -47,4 +55,9 @@ h4 {
 #current-weather-display {
     width: 100%;
     border: 1px black solid;
+    display: none;
+}
+
+#five-day-title {
+    display: none;
 }

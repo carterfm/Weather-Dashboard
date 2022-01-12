@@ -42,52 +42,53 @@
                 </div>
                 <div class="col-9" id="display-container">
                     <div class="row">
-                        <div class="px-1 py-2" id="current-weather-display">
-                            <h1 id="city-name">City Name (Current Date)</h1>
-                            <p>Temp: placeholder degrees</p>
-                            <p>Wind speed: placeholder MPH</p>
-                            <p>Humidity: placeholder%</p>
-                            <p>UV Index: <span id="uv-index">placeholder</span></p>
+                        <div class="p-2" id="current-weather-display">
+                            <h1 id="city-name">City Name</h1>
+                            <img class="weather-icon" src="">
+                            <p class="temp"></p>
+                            <p class="wind-speed"></p>
+                            <p class="humidity"></p>
+                            <p id="uv-index"></p>
                         </div>
                     </div>
-                    <div class="row mt-2">
+                    <div class="row mt-2" id="five-day-title">
                         <h4>5-day Forecast:</h2>
                     </div>
                     <div class="row mt-1 justify-content-between">
-                        <div class="col-2 py-2 bg-dark text-light" id="day-1-weather-display">
+                        <div class="col-2 py-2 bg-dark text-light five-day-weather-display">
                             <h5>Date</h5>
-                            <p>Weather icon </p>
-                            <p>Temp: ph</p>
-                            <p>Wind: ph</p>
-                            <p>Humidity: ph%</p>
+                            <img class="weather-icon" src="">
+                            <p class="temp"></p>
+                            <p class="wind-speed"></p>
+                            <p class="humidity"></p>
                         </div>
-                        <div class="col-2 py-2 bg-dark text-light" id="day-1-weather-display">
+                        <div class="col-2 py-2 bg-dark text-light five-day-weather-display">
                             <h5>Date</h5>
-                            <p>Weather icon </p>
-                            <p>Temp: ph</p>
-                            <p>Wind: ph</p>
-                            <p>Humidity: ph%</p>
+                            <img class="weather-icon" src="">
+                            <p class="temp"></p>
+                            <p class="wind-speed"></p>
+                            <p class="humidity"></p>
                         </div>
-                        <div class="col-2 py-2 bg-dark text-light" id="day-1-weather-display">
+                        <div class="col-2 py-2 bg-dark text-light five-day-weather-display">
                             <h5>Date</h5>
-                            <p>Weather icon </p>
-                            <p>Temp: ph</p>
-                            <p>Wind: ph</p>
-                            <p>Humidity: ph%</p>
+                            <img class="weather-icon" src="">
+                            <p class="temp"></p>
+                            <p class="wind-speed"></p>
+                            <p class="humidity"></p>
                         </div>
-                        <div class="col-2 py-2 bg-dark text-light" id="day-1-weather-display">
+                        <div class="col-2 py-2 bg-dark text-light five-day-weather-display">
                             <h5>Date</h5>
-                            <p>Weather icon </p>
-                            <p>Temp: ph</p>
-                            <p>Wind: ph</p>
-                            <p>Humidity: ph%</p>
+                            <img class="weather-icon" src="">
+                            <p class="temp"></p>
+                            <p class="wind-speed"></p>
+                            <p class="humidity"></p>
                         </div>
-                        <div class="col-2 py-2 bg-dark text-light" id="day-1-weather-display">
+                        <div class="col-2 py-2 bg-dark text-light five-day-weather-display">
                             <h5>Date</h5>
-                            <p>Weather icon </p>
-                            <p>Temp: ph</p>
-                            <p>Wind: ph</p>
-                            <p>Humidity: ph%</p>
+                            <img class="weather-icon" src="">
+                            <p class="temp"></p>
+                            <p class="wind-speed"></p>
+                            <p class="humidity"></p>
                         </div>
                     </div>
                 </div>
@@ -97,6 +98,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="./assets/js/script.js"></script>
     </body>
     
