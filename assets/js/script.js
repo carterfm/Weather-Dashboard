@@ -135,7 +135,6 @@ function addSearchToHistory(search){
     //Using .splice() to add this to the start of the searchHistory array (doing it this way to facilitate
     //rendering it to the page upon page load)
     searchHistory.splice(0, 0, search);
-    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
     
     //Making a button for this search and prepending to (that is, adding to the beginning of) our history list on the page
     var newButton = $("<button>");
@@ -153,6 +152,9 @@ function addSearchToHistory(search){
 
     //storing to local storage
     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+    //Only clearing search field now, so that if the user mispelled their query, they can see where they messed up
+    searchBarEl.val("");
+
 }
 
 favoritesEl.on("click", "button", function(event){
