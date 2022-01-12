@@ -9,7 +9,7 @@ var forecastEls = $(".five-day-weather-display");
 //localStorage. Will only contain the previous eight distinct valid search queries.
 var searchHistory = [];
 
-
+//function for rendering recent history after g
 function initialize(){
     var storedSearchHistory = JSON.parse(localStorage.getItem("searchHistory"));
 
@@ -136,8 +136,6 @@ function addSearchToHistory(search){
     //rendering it to the page upon page load)
     searchHistory.splice(0, 0, search);
     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
-    console.log("stored SearchHistory is:");
-    console.log(JSON.parse(localStorage.getItem("searchHistory")));
     
     //Making a button for this search and prepending to (that is, adding to the beginning of) our history list on the page
     var newButton = $("<button>");
@@ -152,6 +150,9 @@ function addSearchToHistory(search){
         searchHistory.pop();
         favoritesEl.children().eq(8).remove()
     }
+
+    //storing to local storage
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 }
 
 favoritesEl.on("click", "button", function(event){
